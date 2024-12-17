@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Newbie Developer Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css"> 
+        </head>
+        <body>
+           
+            <!-- Navigation Bar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style=" border-right: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);">
+    <a class="navbar-brand" href="#">
+        <img src="./img/logo.jpg" alt="My Portfolio Logo" style="height: 40px; width: 90px; border-radius: 50%; "> <!-- Replace with your logo image -->
+    </a>
+    <button class="navbar-toggler" style=" border-left: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">
+                    <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span> <span>M</span><span>e</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">
+                    <span>S</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#experience">
+                    <span>E</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">
+                    <span>E</span><span>d</span><span>u</span><span>c</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#myworks">
+                    <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                    <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+         
+<section class="hero">
+    <div class="content">
+        <div class="hello-container" style="display: flex; align-items: center;">
+            <img src="./img/profile.jpg" alt="Hello" class="hello-image">
+            <h1>
+                <span class="hello">Hello</span>, <span>I'm</span> <span class="name"> Ry-ry</span>
+                <br/>
+                <span>A Newbie Developer.</span>
+            </h1>            
+        </div>
+        <p>A Front-End Developer and UI/UX Designer</p>
+        <p>I'm a passionate and dedicated developer, eager to learn and grow in the field of web development and design.</p>
+    </div>
+</section>
+        
+            <section class="features">
+                <div class="feature">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Pixel Perfect</h3>
+                    <p>As a designer, I focus on creating visually appealing and user-friendly websites that prioritize intuitive experiences. With attention to detail and adherence to best practices, I ensure every project meets high standards of quality and performance across all devices.</p>
+                </div>
+                    <div class="feature">
+                    <i class="fas fa-highlighter"></i>
+                    <h3>High Quality</h3>
+                  <p>I create visually appealing and intuitive websites that prioritize easy navigation and high performance, ensuring top user experience across all devices.</p>
+                </div>
+                    <div class="feature">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovative Concepts</h3>
+                    <p>I focus on creating practical and visually appealing websites that blend creativity with functionality. By using responsive design, I ensure a seamless experience across all devices, making it easy for users to engage with the content.</p>
+                 </div>
+            </section>
+
+ <!-- About Section -->
+</section>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-col">
+                <h2>About Me</h2>
+                <p>Hello there! I'm a newbie front-end web developer and UI/UX designer with a strong passion for creating beautiful and functional websites. I am constantly learning and improving my skills to provide the best user experience.</p>
+                <div class="tabs">
+                    <div class="tab active" onclick="showSection('skills')">Skills</div>
+                    <div class="tab" onclick="showSection('experience')">Experience</div>
+                    <div class="tab" onclick="showSection('education')">Education</div>
+                </div>
+                <div id="skills" class="section active">
+                    <ul class="list-group">
+                        <li class="list-group-item" style=" border-left: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); " data-toggle="modal" data-target="#skillModal" data-skill="HTML">HTML</li>
+                        <li class="list-group-item" style=" border-left: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); "data-toggle="modal" data-target="#skillModal" data-skill="CSS">CSS</li>
+                        <li class="list-group-item" style=" border-left: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); "data-toggle="modal" data-target="#skillModal" data-skill="JavaScript">JavaScript</li>
+                        <li class="list-group-item" style=" border-left: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); "data-toggle="modal" data-target="#skillModal" data-skill="Bootstrap">Bootstrap</li>
+                        <li class="list-group-item" style=" border-left: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); "data-toggle="modal" data-target="#skillModal" data-skill="Git & GitHub">Git & GitHub</li>
+                    </ul>
+                </div>
+                <div id="experience" class="section">
+                    <ul class="list-group">
+                        <li class="list-group-item" style=" border-left: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); ">
+                            <h5>Intern Web Developer</h5>
+                            <p>Company Name - Location (Month Year - Month Year)</p>
+                            <p>Worked on developing and maintaining web applications using HTML, CSS, and JavaScript.</p>
+                        </li>
+                        <li class="list-group-item" style=" border-left: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); ">
+                            <h5>Freelance Developer</h5>
+                            <p>Self-Employed (Month Year - Present)</p>
+                            <p>Created websites for local businesses, focusing on responsive design and user experience.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="education" class="section">
+                    <ul class="list-group">
+                        <li class="list-group-item" style=" border-left: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); " >
+                            <h5>Bachelor of Science in Computer Science</h5>
+                            <p>University Name - Location (Month Year - Month Year)</p>
+                            <p>Relevant coursework: Web Development, Data Structures, Algorithms.</p>
+                        </li>
+                        <li class="list-group-item" style=" border-left: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); ">
+                            <h5>Web Development Bootcamp</h5>
+                            <p>Bootcamp Name - Location (Month Year - Month Year)</p>
+                            <p>Intensive training in HTML, CSS, JavaScript, and modern web frameworks.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card" id="flip-card" onclick="this.querySelector('.card-inner').classList.toggle('flipped');">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img alt="Newbie Developer working on a project" class="img-fluid" src="./img/9.jpg" />
+                        </div>
+                        <div class="card-back">
+                            <p>This image depicts a newbie developer working on a project, showcasing their dedication and enthusiasm for learning and growing in the field of development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <!-- Projects Section -->
+        <section id="myworks" class="portfolio">
+            <h5>My Projects</h5>
+            <p>Here are some of my amazing works.</p>
+            <div class="works">
+                <div class="work animate__animated animate__fadeIn" style="animation-delay: 0.5s;">
+                    <video width="300" height="200" controls>
+                        <source src="./img/03.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="content">
+                        <h2 class="card-title">Project 1</h2>
+                        <p class="card-text">A simple website built with HTML and CSS.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#project1Modal" data-title="Project 1" data-description="A simple website built with HTML and CSS." data-video="./img/03.mp4">View Project</a>
+                    </div>
+                </div>
+                <div class="work animate__animated animate__fadeIn" style="animation-delay: 1s;">
+                    <video width="300" height="200" controls>
+                        <source src="./img/01.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="content">
+                        <h2 class="card-title">Project 2</h2>
+                        <p class="card-text">A JavaScript-based interactive web application.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#project2Modal" data-title="Project 2" data-description="A JavaScript-based interactive web application." data-video="./img/01.mp4">View Project</a>
+                    </div>
+                </div>
+                <div class="work animate__animated animate__fadeIn" style="animation-delay: 1.5s;">
+                    <video width="300" height="200" controls>
+                        <source src="./img/02.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="content">
+                        <h2 class="card-title">Project 3</h2>
+                        <p class="card-text">A responsive website using Bootstrap.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#project3Modal" data-title="Project 3" data-description="A responsive website using Bootstrap." data-video="./img/02.mp4">View Project</a>
+                    </div>
+                </div>
+            </div>
+        
+            <section>
+                    <div class="works">
+                        <div class="work animate__animated animate__fadeIn" style="animation-delay: 1.5s;">
+                            <img alt="Project 4" height="200" src="./img/07.png" width="300"/>
+                            <div class="content">
+                                <h2 class="card-title">Project 4</h2>
+                                <p class="card-text">A simple website built with HTML and CSS.</p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#project4Modal" 
+                                   data-title="Project 4" data-description="A simple website built with HTML and CSS." 
+                                   data-video="https://storage.googleapis.com/a1aa/image/dHGuXY1a2c66LNjfjWpDxprKmtz6VRYyV9QoV3s8P6MnYO5JA.jpg">View Project</a>
+                            </div>
+                        </div>
+                       
+                    <div class="work animate__animated animate__fadeIn" style="animation-delay: 1.5s;">
+                        <video width="300" height="200" controls>
+                            <source src="./img/05.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="content">
+                            <h2 class="card-title">Project 5</h2>
+                            <p class="card-text">A responsive wireframe design.</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#project3Modal" data-title="Project 3" data-description="A responsive website using Bootstrap." data-video="./img/02.mp4">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="work animate__animated animate__fadeIn" style="animation-delay: 1.5s;">
+                        <img alt="Project 6" height="200" src="./img/06.png" width="300"/>
+                        <div class="content">
+                            <h2 class="card-title">Project 6</h2>
+                            <p class="card-text">Mobile App Interface Design - Figma .</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#project6Modal" 
+                               data-title="Project 6" data-description="A responsive website using Bootstrap." 
+                               data-video="./img/project6_video.mp4">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </section>
+
+        <!-- Modal -->
+  
+        <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Website Overview:</h2>
+                        <p>This is a straightforward and elegantly designed website crafted using HTML and CSS. It serves as an excellent example of clean coding practices and responsive design. The website features a user-friendly layout, ensuring an intuitive navigation experience for visitors. With a focus on aesthetics and functionality, it showcases the essential elements of web design, including well-structured content, visually appealing styles, and seamless integration of multimedia elements. Ideal for beginners looking to understand the fundamentals of web development, this project highlights the power of HTML and CSS in creating engaging online experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Website Overview:</h2>
+                        <p>An engaging JavaScript-based interactive web application designed to enhance user experience through dynamic content and interactivity. This project showcases the power of JavaScript in creating responsive web applications that captivate users with seamless interactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Website Overview:</h2>
+                        <p>a fully responsive website developed using Bootstrap, a powerful front-end framework that simplifies the process of creating mobile-first, responsive designs. This project highlights the versatility and efficiency of Bootstrap in building visually appealing and user-friendly web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="project4Modal" tabindex="-1" role="dialog" aria-labelledby="project4ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="project4ModalLabel">Project 4</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Website Overview:</h2>
+                        <p>One of the first major innovations to the app was a move towards flat design. Simplified icons and single tone colours looked better on the small screens and reduced load times. To improve usability the navigation was streamlined with many options moved under the drop-down menus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="project5Modal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Website Overview:</h2>
+                        <p>Websites need to look good on various devices — desktops, laptops, tablets, and smartphones. And wireframing is a crucial step in creating responsive designs. Responsive wireframes are sets of wireframes with different layouts for the same design that: Show how web content adapts to different grid widths.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="project6Modal" tabindex="-1" role="dialog" aria-labelledby="project6ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="project6ModalLabel">Project 6</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The image is a screenshot of a Figma design file showcasing a mobile app interface. The design is displayed on multiple iPhone 14 & 15 Pro screens, each showing different parts of the app. The app appears to have a green and white color scheme with various UI elements such as buttons, text fields, images, and icons. The screens include login forms, informational pages, user profiles, and other interactive components. The app seems to be designed for educational or informational purposes, with sections for news, projects, and user interactions. The design is clean and modern, with a focus on usability and accessibility.</p>
+                        <video controls style="width: 100%;">
+                            <source src="./img/project6_video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+            <!-- Contact Section -->
+            <section id="contact" class="py-5" style="background-color: #208da3;  border-left: 10px solid rgb(79, 77, 74);   border-right: 10px solid rgb(79, 77, 74); ; border-bottom: 10px solid rgb(167, 207, 213); "> 
+                <div class="container">
+                    <h2 class="text-center">Contact Me</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" style=" border-right: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); " id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" style=" border-right: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); " id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group" >
+                            <label for="message">Message</label>
+                            <textarea class="form-control" style=" border-right: 5px solid rgb(79, 77, 74); border-bottom: 5px solid rgb(167, 207, 213); "  id="message" rows="3" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </section>
+           
+            <footer class="footer">
+                <p>&copy; 2023 Newbie Developer. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/maryqueen.cortel.5?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/Cqueenie970?t=wYqpXYpzJLDeWPMDJ9poGw&s=09"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@ryry3992?_t=ZS-8s30UJ32ojd&_r=1"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/dear_dharling?igsh=c3VyY3UxNjN0YWE2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </footer>        
+            <script src="./js/index.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+</body>
+</html>
